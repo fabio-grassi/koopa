@@ -7,7 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.IOException;
+import java.net.URI;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
@@ -34,14 +36,21 @@ import koopa.dsl.stage.runtime.model.SuiteOfStages;
  * {@linkplain #getStageFiles()}, give it an instance of your grammar (via
  * {@linkplain #getGrammar()}, and tell it how an input is to be tokenized (via
  * {@link #getSourceForSample(String, Grammar)}).
+ * The default implementation of {@linkplain #getStageFiles()} returns all .stage
+ * files present in the classpath in the same package as the enclosing class.
  */
 public abstract class GrammarTestSuite {
 
-	public abstract File[] getStageFiles();
+	private static final FileFilter FILE_FILTER = file -> file.getName().toLowerCase().endsWith(".stage");
 
-	public abstract Grammar getGrammar();
+	protected File[] getStageFiles() {
+		final URI dir = URI.create(getClass().getResource("").toString());
+		return new File(dir).listFiles(FILE_FILTER);
+	}
 
-	public abstract Source getSourceForSample(String sample,
+	protected abstract Grammar getGrammar();
+
+	protected abstract Source getSourceForSample(String sample,
 			Grammar grammar);
 
 	/**

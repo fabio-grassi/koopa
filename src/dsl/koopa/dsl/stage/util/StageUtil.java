@@ -2,7 +2,6 @@ package koopa.dsl.stage.util;
 
 import java.io.File;
 import java.io.FileReader;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.Random;
 
@@ -74,9 +73,5 @@ public final class StageUtil {
 			return parse.getTarget(KoopaTreeBuilder.class).getTree();
 			
 		}
-	}
-
-	public static FilenameFilter getFilenameFilter() {
-		return (dir, name) -> name.endsWith(".stage");
 	}
 }

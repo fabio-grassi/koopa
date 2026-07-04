@@ -9,10 +9,8 @@ import static koopa.cobol.sources.SourceFormat.FIXED;
 import static koopa.cobol.sources.SourceFormat.FREE;
 import static koopa.cobol.sources.SourceFormat.VARIABLE;
 import static koopa.core.data.tags.AreaTag.COMPILER_DIRECTIVE;
-
 import static org.junit.jupiter.api.Assertions.fail;
 
-import java.io.File;
 import java.util.HashMap;
 
 import koopa.cobol.CobolTokens;
@@ -46,11 +44,6 @@ public class CobolSourcesValidationTest extends CoreSourcesValidationTest {
 		CLASSES.put("InlineComments", InlineComments.class);
 		CLASSES.put("ContinuationOfLines", ContinuationOfLines.class);
 		CLASSES.put("Replace", Replace.class);
-	}
-
-	@Override
-	protected File getFolder() {
-		return new File("test/cobol/koopa/cobol/sources/test/");
 	}
 
 	@Override

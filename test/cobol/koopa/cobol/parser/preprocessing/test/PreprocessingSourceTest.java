@@ -5,10 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileReader;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.StringReader;
+import java.net.URI;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.stream.Stream;
@@ -32,14 +33,12 @@ public class PreprocessingSourceTest implements FileBasedTest {
 	private static final String EXPECTED_PREFIX = ">";
 	private static final String LINE_SEPARATOR = System.lineSeparator();
 
-	private static final FilenameFilter FILTER = (dir, name) -> name.toLowerCase().endsWith(".ppsample");
+	private static final FileFilter FILE_FILTER = f -> f.getName().toLowerCase().endsWith(".ppsample");
 
 	@Override
 	public File[] getFiles() {
-		File folder = new File(
-				"test/cobol/koopa/cobol/parser/preprocessing/test/");
-
-		return folder.listFiles(FILTER);
+		final URI dir = URI.create(getClass().getResource("").toString());
+		return new File(dir).listFiles(FILE_FILTER);
 	}
 
 	private File file;
