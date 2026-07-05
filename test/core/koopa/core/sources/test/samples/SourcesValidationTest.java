@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -23,11 +24,16 @@ import koopa.core.util.test.FileBasedTest;
 /**
  * This class provides the infrastructure for testing the different sources. It
  * looks for ".sample" files, and runs each one it finds through a JUnit test.
+ * The default implementation of {@linkplain #getFolder()} returns the directory
+ * corresponding to the same package as the enclosing class.
  */
 public abstract class SourcesValidationTest
 		implements FileBasedTest, DataValidator {
 
-	protected abstract File getFolder();
+	protected File getFolder() {
+		final URI dir = URI.create(getClass().getResource("").toString());
+		return new File(dir);
+	}
 
 	@Override
 	public File[] getFiles() {

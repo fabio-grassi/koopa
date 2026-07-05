@@ -13,8 +13,6 @@ import static koopa.core.data.tags.SyntacticTag.WHITESPACE;
 import static koopa.core.data.tags.SyntacticTag.WORD;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import java.io.File;
-
 import koopa.core.sources.LineSplitter;
 import koopa.core.sources.Source;
 import koopa.core.sources.test.samples.Sample;
@@ -25,11 +23,6 @@ import koopa.core.sources.test.samples.SourcesValidationTest;
  * looks for ".sample" files, and runs each one it finds through a JUnit test.
  */
 public class CoreSourcesValidationTest extends SourcesValidationTest {
-
-	@Override
-	protected File getFolder() {
-		return new File("test/core/koopa/core/sources/test/");
-	}
 
 	@Override
 	protected void setUp() {

@@ -424,12 +424,12 @@
 		<junitlauncher haltonfailure="yes" printsummary="yes">
 			<classpath refid="test.classpath" />
 			<!-- <listener type="legacy-brief" sendSysOut="true" sendSysErr="true" /> -->
-			<test name="koopa.cobol.grammar.directives.test.FixedDirectivesTests">
+			<test name="koopa.cobol.grammar.directives.test.fixed.FixedDirectivesTests">
 				<fork>
 					<jvmarg value="-ea" />
 				</fork>
 			</test>
-			<test name="koopa.cobol.grammar.directives.test.FreeDirectivesTests">
+			<test name="koopa.cobol.grammar.directives.test.free.FreeDirectivesTests">
 				<fork>
 					<jvmarg value="-ea" />
 				</fork>
