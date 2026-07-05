@@ -6,7 +6,7 @@ import koopa.core.data.Data;
 import koopa.core.data.Token;
 import koopa.core.parsers.Parse;
 import koopa.core.parsers.ParserCombinator;
-import koopa.core.sources.test.HardcodedSource;
+import koopa.core.sources.HardcodedSource;
 import koopa.core.streams.BaseStream;
 import koopa.core.streams.LimitedStream;
 import koopa.core.targets.ListTarget;

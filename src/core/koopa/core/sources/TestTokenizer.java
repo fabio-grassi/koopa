@@ -1,4 +1,4 @@
-package koopa.core.sources.test;
+package koopa.core.sources;
 
 import java.util.LinkedList;
 
@@ -8,8 +8,6 @@ import org.apache.logging.log4j.Logger;
 import koopa.core.data.Data;
 import koopa.core.data.Token;
 import koopa.core.data.tags.AreaTag;
-import koopa.core.sources.ChainingSource;
-import koopa.core.sources.Source;
 
 /**
  * A {@linkplain Source} which can tell you whether or not it has reached an

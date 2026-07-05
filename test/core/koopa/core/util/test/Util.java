@@ -14,9 +14,9 @@ import koopa.core.data.Range;
 import koopa.core.data.Token;
 import koopa.core.data.markers.Start;
 import koopa.core.data.tags.AreaTag;
+import koopa.core.sources.HardcodedSource;
 import koopa.core.sources.Source;
 import koopa.core.sources.TagAll;
-import koopa.core.sources.test.HardcodedSource;
 import koopa.core.trees.Tree;
 
 public final class Util {

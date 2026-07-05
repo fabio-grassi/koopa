@@ -14,7 +14,7 @@ import java.util.List;
 import koopa.core.grammars.combinators.Scoped;
 import koopa.core.parsers.Parse;
 import koopa.core.parsers.ParserCombinator;
-import koopa.core.sources.test.HardcodedSource;
+import koopa.core.sources.HardcodedSource;
 import koopa.core.targets.ListTarget;
 import koopa.core.trees.KoopaTreeBuilder;
 import koopa.core.trees.Tree;

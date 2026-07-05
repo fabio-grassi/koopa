@@ -3,7 +3,7 @@ package koopa.core.streams.test;
 import org.junit.jupiter.api.Test;
 
 import koopa.core.parsers.Stream;
-import koopa.core.sources.test.HardcodedSource;
+import koopa.core.sources.HardcodedSource;
 import koopa.core.streams.BaseStream;
 import koopa.core.targets.ListTarget;
 

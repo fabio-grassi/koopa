@@ -24,7 +24,7 @@ import koopa.core.grammars.Grammar;
 import koopa.core.parsers.Parse;
 import koopa.core.parsers.ParserCombinator;
 import koopa.core.sources.Source;
-import koopa.core.sources.test.TestTokenizer;
+import koopa.core.sources.TestTokenizer;
 import koopa.core.targets.ListTarget;
 import koopa.core.util.Files;
 import koopa.core.util.Reflect;

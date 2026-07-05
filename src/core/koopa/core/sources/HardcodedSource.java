@@ -1,4 +1,4 @@
-package koopa.core.sources.test;
+package koopa.core.sources;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,8 +7,6 @@ import java.util.List;
 import koopa.core.data.Data;
 import koopa.core.data.Position;
 import koopa.core.data.Token;
-import koopa.core.sources.BasicSource;
-import koopa.core.sources.Source;
 
 /**
  * Simple source of tokens which accepts a list of strings and tags, and returns

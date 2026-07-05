@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Test;
 
 import koopa.core.data.Data;
 import koopa.core.data.Token;
+import koopa.core.sources.HardcodedSource;
+import koopa.core.sources.TestTokenizer;
 
 public class TestTokenizerTest {
 

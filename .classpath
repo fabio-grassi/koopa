@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/core"/>
-	<classpathentry kind="src" path="test/core"/>
+	<classpathentry kind="src" output="koopa/build/test" path="test/core">
+		<attributes>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src/templates"/>
 	<classpathentry kind="src" path="src/dsl"/>
-	<classpathentry kind="src" path="test/dsl"/>
+	<classpathentry kind="src" output="koopa/build/test" path="test/dsl">
+		<attributes>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src/cics"/>
-	<classpathentry kind="src" path="test/cics"/>
+	<classpathentry kind="src" output="koopa/build/test" path="test/cics">
+		<attributes>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src/sql"/>
-	<classpathentry kind="src" path="test/sql"/>
+	<classpathentry kind="src" output="koopa/build/test" path="test/sql">
+		<attributes>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src/cobol"/>
-	<classpathentry kind="src" path="test/cobol"/>
+	<classpathentry kind="src" output="koopa/build/test" path="test/cobol">
+		<attributes>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src/apps"/>
 	<classpathentry kind="src" path="examples/jaxen"/>
 	<classpathentry kind="src" path="examples/basic"/>

@@ -28,9 +28,9 @@ import koopa.cobol.parser.preprocessing.replacing.ReplacingPhraseOperand;
 import koopa.core.data.Data;
 import koopa.core.data.Position;
 import koopa.core.data.Token;
+import koopa.core.sources.HardcodedSource;
 import koopa.core.sources.Source;
 import koopa.core.sources.TagAll;
-import koopa.core.sources.test.HardcodedSource;
 
 public class ReplacingPhraseOperandTest {
 

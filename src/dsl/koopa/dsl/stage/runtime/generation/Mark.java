@@ -2,7 +2,7 @@ package koopa.dsl.stage.runtime.generation;
 
 import java.util.LinkedList;
 
-import koopa.core.sources.test.TestTokenizer;
+import koopa.core.sources.TestTokenizer;
 
 /**
  * This marks a point in the grammar unit test where we expect the parser to end
